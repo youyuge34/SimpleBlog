@@ -15,5 +15,7 @@ import views
 
 urlpatterns = [
     #用r'^$'约束空字符串
-    url(r'^$',views.blog)
+    url(r'^index/$',views.blog),
+    url(r'article/(?P<article_id>[0-9]+)/$',views.article_page)
+
 ]
